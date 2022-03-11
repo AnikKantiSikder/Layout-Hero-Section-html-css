@@ -1,57 +1,79 @@
-/* MAIN COLOR: #087F5B
-GREY COLOR: #343a40 */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
-html {
-    font-family: 'Rubik', sans-serif;
+  html {
+    font-family: "Rubik", sans-serif;
     color: #444;
-}
+  }
 
-/* Utility class */
-.container {
-    width: 1200px;
+  .container {
     margin: 0 auto;
-}
+    width: 1200px;
+  }
 
-nav {
+  header {
+    /* background-color: orangered; */
+    height: 100vh;
+    position: relative;
+
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.6),
+        rgba(34, 34, 34, 0.6)
+      ),
+      url(hero.jpg);
+    background-size: cover;
+    color: #fff;
+  }
+
+  nav {
     font-size: 20px;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
-    color: #fff;
     padding-top: 32px;
-    padding-bottom: 48px;
-}
+    /* background-image: linear-gradient(to right, red, blue); */
 
-header {
-    height: 100vh;
-    background-image: url("hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    /* background-color: green; */
+  }
 
-h1 {
+  .header-container {
+    width: 1200px;
+    position: absolute;
+
+    /* In relation to PARENT size */
+    left: 50%;
+    top: 50%;
+
+    /* In relation to ELEMENT size */
+    transform: translate(-50%, -50%);
+
+    /* background-color: violet; */
+
+    /* text-align: center; */
+  }
+
+  .header-container-inner {
+    width: 50%;
+    /* background-color: blue; */
+  }
+
+  h1 {
     font-size: 52px;
     margin-bottom: 32px;
-    color: #fff;
-    width: 600px;
-}
+    line-height: 1.05;
+  }
 
-header p {
+  p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 48px;
-    color: #fff;
-    width: 600px;
-}
+  }
 
-.btn:link,
-.btn:visited {
+  .btn:link,
+  .btn:visited {
     font-size: 20px;
     font-weight: 600;
     background-color: #e67e22;
@@ -60,18 +82,14 @@ header p {
     display: inline-block;
     padding: 16px 32px;
     border-radius: 9px;
-}
+  }
 
-h2 {
+  h2 {
     font-size: 44px;
     margin-bottom: 48px;
-}
+  }
 
-section {
+  section {
     padding: 96px 0;
     background-color: #f7f7f7;
-}
-
-.section-text {
-    color: #444;
-}
+  }
