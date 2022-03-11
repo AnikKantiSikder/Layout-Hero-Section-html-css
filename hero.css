@@ -18,28 +18,36 @@ html {
     margin: 0 auto;
 }
 
-header {
-    background-color: orangered;
-    height: 100vh;
-}
-
 nav {
     font-size: 20px;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
-    background-color: green;
+    color: #fff;
+    padding-top: 32px;
+    padding-bottom: 48px;
+}
+
+header {
+    height: 100vh;
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
     font-size: 52px;
     margin-bottom: 32px;
+    color: #fff;
+    width: 600px;
 }
 
-p {
+header p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 48px;
+    color: #fff;
+    width: 600px;
 }
 
 .btn:link,
@@ -62,4 +70,8 @@ h2 {
 section {
     padding: 96px 0;
     background-color: #f7f7f7;
+}
+
+.section-text {
+    color: #444;
 }
